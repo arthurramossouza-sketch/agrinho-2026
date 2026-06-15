@@ -1,0 +1,186 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agrinho 2026</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #b8f1b0, #ffffff);
+      color: #1d3b1d;
+    }
+
+    header {
+      background: #2e8b57;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    nav {
+      background: #256b45;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #c8ff9c;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #2e8b57;
+    }
+
+    button {
+      background: #2e8b57;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 15px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #256b45;
+    }
+
+    footer {
+      background: #2e8b57;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    #mensagem {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #0b5f2a;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Agrinho 2026</h1>
+    <p>Conectando o campo e a cidade através da tecnologia e sustentabilidade</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#projeto">Projeto</a>
+    <a href="#sustentabilidade">Sustentabilidade</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <h2>Bem-vindo ao Projeto Agrinho 2026</h2>
+    <p>
+      O Agrinho incentiva a educação, a preservação ambiental e o uso da tecnologia no campo.
+      Este projeto mostra como a programação pode ajudar na conscientização sobre sustentabilidade.
+    </p>
+
+    <button onclick="mostrarMensagem()">Clique para apoiar o meio ambiente 🌱</button>
+
+    <div id="mensagem"></div>
+  </section>
+
+  <section class="cards" id="projeto">
+    <div class="card">
+      <h3>🌾 Agricultura</h3>
+      <p>
+        A tecnologia ajuda agricultores a produzirem mais alimentos com menos desperdício.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>💧 Sustentabilidade</h3>
+      <p>
+        Economizar água e cuidar da natureza é essencial para o futuro.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>💻 Tecnologia</h3>
+      <p>
+        Programação e inovação ajudam a criar soluções inteligentes para o campo.
+      </p>
+    </div>
+  </section>
+
+  <footer id="contato">
+    <p>Projeto criado para o Agrinho 2026 | Feito no Visual Studio Code</p>
+  </footer>
+
+  <script>
+    function mostrarMensagem() {
+      document.getElementById('mensagem').innerHTML =
+        '🌱 Juntos podemos cuidar do planeta e construir um futuro melhor!';
+    }
+  </script>
+
+</body>
+</html>
+index.html
+Exibindo index.html.
